@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Luxury Real Estate Design System - Premium Dark Theme with Gold Accents */
+
+@layer base {
+  :root {
+    /* Base Theme - Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
+
+    --primary: 222 84% 5%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 84% 5%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 84% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 5%;
+
+    --radius: 0.75rem;
+
+    /* Luxury Real Estate Colors */
+    --luxury-dark: 220 26% 8%;
+    --luxury-darker: 220 30% 5%;
+    --luxury-light: 220 15% 15%;
+    --luxury-accent: 45 100% 60%;
+    --luxury-gold: 45 100% 55%;
+    --luxury-gold-light: 45 100% 70%;
+    --luxury-neutral: 220 10% 25%;
+    --luxury-neutral-light: 220 8% 35%;
+    --luxury-text: 220 15% 95%;
+    --luxury-text-muted: 220 10% 65%;
+
+    /* Premium Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--luxury-dark)), hsl(var(--luxury-darker)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--luxury-gold)), hsl(var(--luxury-gold-light)));
+    --gradient-overlay: linear-gradient(180deg, transparent, hsl(var(--luxury-dark) / 0.8));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--luxury-dark)), hsl(var(--luxury-light)));
+
+    /* Premium Shadows */
+    --shadow-luxury: 0 20px 40px -10px hsl(var(--luxury-dark) / 0.4);
+    --shadow-gold: 0 10px 30px -5px hsl(var(--luxury-gold) / 0.3);
+    --shadow-card: 0 8px 25px -5px hsl(var(--luxury-dark) / 0.2);
+    --shadow-elegant: 0 15px 35px -5px hsl(var(--luxury-dark) / 0.3);
+
+    /* Animation Durations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - Premium Luxury */
+    --background: var(--luxury-dark);
+    --foreground: var(--luxury-text);
+
+    --card: var(--luxury-light);
+    --card-foreground: var(--luxury-text);
+
+    --popover: var(--luxury-light);
+    --popover-foreground: var(--luxury-text);
+
+    --primary: var(--luxury-gold);
+    --primary-foreground: var(--luxury-dark);
+
+    --secondary: var(--luxury-neutral);
+    --secondary-foreground: var(--luxury-text);
+
+    --muted: var(--luxury-neutral);
+    --muted-foreground: var(--luxury-text-muted);
+
+    --accent: var(--luxury-accent);
+    --accent-foreground: var(--luxury-dark);
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: var(--luxury-text);
+
+    --border: var(--luxury-neutral);
+    --input: var(--luxury-neutral);
+    --ring: var(--luxury-gold);
+
+    --sidebar-background: var(--luxury-darker);
+    --sidebar-foreground: var(--luxury-text);
+    --sidebar-primary: var(--luxury-gold);
+    --sidebar-primary-foreground: var(--luxury-dark);
+    --sidebar-accent: var(--luxury-neutral);
+    --sidebar-accent-foreground: var(--luxury-text);
+    --sidebar-border: var(--luxury-neutral);
+    --sidebar-ring: var(--luxury-gold);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
